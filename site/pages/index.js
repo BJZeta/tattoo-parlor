@@ -1,16 +1,13 @@
 import Layout from "../components/Layout";
-import HomeImage from "../components/HomeImage";
+import QuotesCarousel from "../components/QuotesCarousel";
+import { Quotes } from "../assets/Quotes";
 import Image from "next/image";
-import styles from "../styles/styles.module.css";
 
 export default function Home() {
   return (
     <Layout>
       <div className="h-[90vh] text-red-700">
-        <div
-          id="main-image"
-          className="w-full h-full relative"
-        >
+        <div id="main-image" className="w-full h-full relative">
           <Image
             src="/static/banner.jpg"
             alt="Skull Horns"
@@ -54,6 +51,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <QuotesCarousel slides={Quotes} />
     </Layout>
   );
 }

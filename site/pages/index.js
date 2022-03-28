@@ -52,6 +52,11 @@ export default function Home() {
         </div>
       </div>
       <QuotesCarousel slides={Quotes} />
+      <div className="h-[50vh] bg-gradient-to-br from-black to-gray-800 grid grid-cols-2 text-gray-100">
+        <section>
+          
+        </section>
+      </div>
     </Layout>
   );
 }

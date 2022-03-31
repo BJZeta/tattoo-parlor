@@ -2,6 +2,8 @@ import Layout from "../components/Layout";
 import QuotesCarousel from "../components/QuotesCarousel";
 import { Quotes } from "../assets/Quotes";
 import Image from "next/image";
+import AppointmentForm from "../components/AppointmentForm";
+import MapMarker from "../components/MapMarker";
 
 export default function Home() {
   return (
@@ -53,9 +55,8 @@ export default function Home() {
       </div>
       <QuotesCarousel slides={Quotes} />
       <div className="h-[50vh] bg-gradient-to-br from-black to-gray-800 grid grid-cols-2 text-gray-100">
-        <section>
-          
-        </section>
+        <AppointmentForm />
+        <MapMarker />
       </div>
     </Layout>
   );

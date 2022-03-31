@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ToastContainer } from "react-toastify";
 
 export default function AppointmentForm() {
   const [name, setName] = useState("");
@@ -10,7 +11,7 @@ export default function AppointmentForm() {
   const [successMessage, setSuccessMessage] = useState(false);
   const [failedMessage, setFailedMessage] = useState(false);
 
-  const [sendButton, setSendButton] = useState("Send")
+  const [sendButton, setSendButton] = useState("Send");
 
   const handleValidation = () => {
     let tempErrors = {};
@@ -37,12 +38,11 @@ export default function AppointmentForm() {
   };
 
   const handleSubmit = async (e) => {
-    
     e.preventDefault();
 
     let isValidForm = handleValidation();
 
-    if(isValidForm) {
+    if (isValidForm) {
       setSendButton("Sending");
       const res = await fetch("/api/appointment", {
         body: JSON.stringify({
@@ -51,14 +51,14 @@ export default function AppointmentForm() {
           message: message,
         }),
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        method: "POST"
+        method: "POST",
       });
 
-      const {error} = await res.json();
+      const { error } = await res.json();
 
-      if(error) {
+      if (error) {
         console.log(error);
         setSuccessMessage(false);
         setFailedMessage(true);
@@ -68,11 +68,41 @@ export default function AppointmentForm() {
       setSuccessMessage(true);
       setFailedMessage(false);
       setSendButton("Send");
-    };
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} >
+      {successMessage && (
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        >
+          Message Sent
+        </ToastContainer>
+      )}
+      {failedMessage && (
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        >
+          Message Unable to Send
+        </ToastContainer>
+      )}
       <h2>Set An Appointment!</h2>
 
       <label htmlFor="name">
@@ -85,6 +115,7 @@ export default function AppointmentForm() {
           setName(e.target.value);
         }}
         name="name"
+        className="text-black"
       />
 
       <label htmlFor="email">
@@ -97,6 +128,7 @@ export default function AppointmentForm() {
           setEmail(e.target.value);
         }}
         name="email"
+        className="text-black"
       />
 
       <label htmlFor="message">
@@ -109,7 +141,11 @@ export default function AppointmentForm() {
           setMessage(e.target.value);
         }}
         name="message"
+        className="text-black"
       />
+      <div>
+        <button className="text-black" type="submit" >{sendButton}</button>
+      </div>
     </form>
   );
 }

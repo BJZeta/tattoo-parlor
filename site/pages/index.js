@@ -56,7 +56,10 @@ export default function Home() {
       <QuotesCarousel slides={Quotes} />
       <div className="h-[50vh] bg-gradient-to-br from-black to-gray-800 grid grid-cols-2 text-gray-100">
         <AppointmentForm />
-        <MapMarker />
+        <div className="pl-24">
+          <h2>Come Visit Us!</h2>
+          <MapMarker />
+        </div>
       </div>
     </Layout>
   );

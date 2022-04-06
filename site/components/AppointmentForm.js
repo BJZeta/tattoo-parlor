@@ -72,7 +72,7 @@ export default function AppointmentForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} >
+    <form onSubmit={handleSubmit} className="px-7">
       {successMessage && (
         <ToastContainer
           position="top-center"

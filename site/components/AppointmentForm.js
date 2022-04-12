@@ -132,7 +132,7 @@ export default function AppointmentForm() {
       />
 
       <label htmlFor="message">
-        Tell Us What You're Interested In
+        {`Tell Us What You're Interested In`}
         <span className="text-gray-500 dark:text-gray-50">*</span>
       </label>
       <textarea

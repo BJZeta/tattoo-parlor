@@ -42,7 +42,7 @@ function MapMarker() {
           className="text-white"
         >
           <div className="text-black">
-            <h1>Tim's Tattoos</h1>
+            <h1>{`Tim's Tattoos`}</h1>
           </div>
         </InfoWindow>
       </Marker>

@@ -17,8 +17,8 @@ export default function Home() {
             objectFit="contain"
             quality={100}
           />
-          <section className="absolute top-48 left-1/4 px-4 bg-gradient-to-r from-gray-100 opacity-75 rounded-2xl">
-            <h1 className="text-4xl">{`Tim Tattooer's Parlor`}</h1>
+          <section className="absolute top-48 left-1/4 px-4 bg-slate-200 rounded-2xl animate-[1s_ease-out_0s_1_slideInFromLeft] ">
+            <h1 className="text-6xl">{`Tim Tattooer's Parlor`}</h1>
             <h3 className="text-3xl">
               Home of some of the <span className="text-yellow-300">BEST</span>{" "}
               tattoos you can get in{" "}

@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @layer components {
   .slider {
     position: relative;
@@ -30,5 +41,16 @@
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);
+  }
+
+  .titlecard {
+    background: white;
+    width: 40vw;
+    transition: 1s ease-out 0s 1 slideInFromLeft;
+  }
+
+  .titlecard.show {
+    opacity: 1;
+    width: 50vw;
   }
 }

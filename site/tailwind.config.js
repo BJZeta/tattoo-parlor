@@ -14,7 +14,8 @@ module.exports = {
         },
       },
       animation: {
-        slideInFromLeft: '1s ease-out 0s 1 slideInFromLeft'
+        slideInFromLeft: '1s ease-out 0s 1 slideInFromLeft',
+        // fadeInText: 'ease-'
       }
     },
   },

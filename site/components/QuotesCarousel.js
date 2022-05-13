@@ -25,11 +25,11 @@ export default function HomeImage({ slides }) {
     <section className="relative h-[40vh] flex justify-center text-center bg-slate-200 py-32 ">
       <FaRegArrowAltCircleLeft
         onClick={prevSlide}
-        className="absolute top-1/2 left-36 text-5xl text-black cursor-pointer select-none z-10"
+        className="absolute top-3/4 lg:top-1/2 left-16 lg:left-36 text-5xl text-black cursor-pointer select-none z-10"
       />
       <FaRegArrowAltCircleRight
         onClick={nextSlide}
-        className="absolute top-1/2 right-36 text-5xl text-black cursor-pointer select-none z-10"
+        className="absolute top-3/4 lg:top-1/2 right-16 lg:right-36 text-5xl text-black cursor-pointer select-none z-10"
       />
       {Quotes.map((quote, index) => {
         return (

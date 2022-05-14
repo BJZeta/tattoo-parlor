@@ -4,6 +4,7 @@ import { Quotes } from "../assets/Quotes";
 import Image from "next/image";
 import MapMarker from "../components/MapMarker";
 import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
+import { SiTiktok } from "react-icons/si";
 
 export default function Home() {
   return (
@@ -50,37 +51,53 @@ export default function Home() {
       </div>
       <QuotesCarousel slides={Quotes} />
       <div className="h-[100vh] lg:h-[50vh] bg-gradient-to-br from-black to-gray-800 grid grid-cols-1 gap-20 lg:gap-10 lg:grid-cols-2 text-gray-100 pt-5 lg:pl-12">
-        <section className="px-10">
-          <h2 className="text-3xl text-left">Contact Info</h2>
-          <h3 className="text-2xl text-left">
-            Set Up An Appointment For Your Visit At:
-          </h3>
-          <div className="pt-10">
+        <div className="px-10">
+          <section>
+            <h2 className="text-3xl text-left">Contact Info</h2>
+            <h3 className="text-2xl text-left pt-5">
+              Set Up An Appointment For Your Visit At:
+            </h3>
+            <div className="pt-5">
+              <a
+                href="https://www.instagram.com/tim_tattooer/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline"
+              >
+                <span className="flex text-3xl hover:text-red-600 justify-between w-56">
+                  <AiOutlineInstagram /> Instagram
+                </span>
+              </a>
+              <a
+                href="https://www.instagram.com/tim_tattooer/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline"
+              >
+                <span className="flex text-3xl hover:text-red-600 justify-between w-40 pt-5">
+                  <AiOutlineMail /> Email
+                </span>
+              </a>
+            </div>
+          </section>
+
+          <section className="mt-5">
+            <h2 className="text-2xl">Follow Us On:</h2>
             <a
-              href="https://www.instagram.com/tim_tattooer/"
-              target="_blank"
-              rel="noreferrer"
-              className="inline"
-            >
-              <span className="flex text-3xl hover:text-red-600 justify-between w-56">
-                <AiOutlineInstagram /> Instagram
-              </span>
-            </a>
-            <a
-              href="https://www.instagram.com/tim_tattooer/"
+              href="https://www.tiktok.com/@tim_tattooer?lang=en"
               target="_blank"
               rel="noreferrer"
               className="inline"
             >
               <span className="flex text-3xl hover:text-red-600 justify-between w-40 pt-5">
-                <AiOutlineMail /> Email
+                <SiTiktok /> TikTok
               </span>
             </a>
-          </div>
-        </section>
+          </section>
+        </div>
         <div className="px-10">
           <h2 className="text-3xl">Come Visit Us</h2>
-          <h3 className="text-xl">834 E Lincoln Ave. Orange, CA. 92865</h3>
+          <h3 className="text-xl pt-5">834 E Lincoln Ave. Orange, CA. 92865</h3>
           <MapMarker />
         </div>
       </div>

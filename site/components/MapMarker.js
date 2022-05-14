@@ -13,7 +13,7 @@ function MapMarker() {
   });
 
   const containerStyle = {
-    width: "70%",
+    width: "80%",
     height: "300px",
     borderRadius: "20px",
     margin: "20px",

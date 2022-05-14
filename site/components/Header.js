@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
+import { SiTiktok } from 'react-icons/si'
 
 export default function Header() {
   return (
@@ -12,12 +13,12 @@ export default function Header() {
         </Link>
       </div>
 
-      <nav className="ml-auto flex text-4xl ">
+      <nav className="ml-auto flex text-3xl md:text-4xl ">
         <a
           href="https://www.instagram.com/tim_tattooer/"
           target="_blank"
           rel="noreferrer"
-          className="mr-2 hover:text-red-600"
+          className="mr-2 md:mr-10 hover:text-red-600"
         >
           <AiOutlineInstagram />
         </a>
@@ -25,9 +26,17 @@ export default function Header() {
           href="https://www.instagram.com/tim_tattooer/"
           target="_blank"
           rel="noreferrer"
-          className="mr-2 hover:text-red-600"
+          className="mr-2 md:mr-10 hover:text-red-600"
         >
           <AiOutlineMail />
+        </a>
+        <a
+          href="https://www.tiktok.com/@tim_tattooer?lang=en"
+          target="_blank"
+          rel="noreferrer"
+          className="mr-2 hover:text-red-600"
+        >
+          <SiTiktok />
         </a>
       </nav>
     </header>

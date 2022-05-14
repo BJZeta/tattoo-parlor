@@ -2,7 +2,6 @@ import Layout from "../components/Layout";
 import QuotesCarousel from "../components/QuotesCarousel";
 import { Quotes } from "../assets/Quotes";
 import Image from "next/image";
-import AppointmentForm from "../components/AppointmentForm";
 import MapMarker from "../components/MapMarker";
 import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
 
@@ -50,7 +49,7 @@ export default function Home() {
         </div>
       </div>
       <QuotesCarousel slides={Quotes} />
-      <div className="h-[100vh] lg:h-[50vh] bg-gradient-to-br from-black to-gray-800 grid grid-cols-1 gap-20 lg:gap-10 lg:grid-cols-2 text-gray-100 pt-5 ">
+      <div className="h-[100vh] lg:h-[50vh] bg-gradient-to-br from-black to-gray-800 grid grid-cols-1 gap-20 lg:gap-10 lg:grid-cols-2 text-gray-100 pt-5 lg:pl-12">
         <section className="px-10">
           <h2 className="text-3xl text-left">Contact Info</h2>
           <h3 className="text-2xl text-left">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
 
 export default function Header() {
   return (
@@ -11,22 +12,23 @@ export default function Header() {
         </Link>
       </div>
 
-      <nav className="ml-auto flex text-xl ">
-        <Link href="/about">
-          <a  className="mr-2 hover:text-red-600">
-            <p>About</p>
-          </a>
-        </Link>
-        <Link href="/gallery">
-          <a className="mr-2 hover:text-red-600">
-            <p>Gallery</p>
-          </a>
-        </Link>
-        <Link href="/contact">
-          <a className="hover:text-red-600">
-            <p>Contact</p>
-          </a>
-        </Link>
+      <nav className="ml-auto flex text-4xl ">
+        <a
+          href="https://www.instagram.com/tim_tattooer/"
+          target="_blank"
+          rel="noreferrer"
+          className="mr-2 hover:text-red-600"
+        >
+          <AiOutlineInstagram />
+        </a>
+        <a
+          href="https://www.instagram.com/tim_tattooer/"
+          target="_blank"
+          rel="noreferrer"
+          className="mr-2 hover:text-red-600"
+        >
+          <AiOutlineMail />
+        </a>
       </nav>
     </header>
   );

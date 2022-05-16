@@ -19,7 +19,7 @@ export default function Home() {
             quality={100}
           />
           <section className="absolute top-48 left-1/4 bg-gradient-to-r from-black to-transparent px-4 rounded-2xl animate-[1s_ease-out_0s_1_slideInFromLeft] ">
-            <h1 className="text-6xl opacity-100">{`Tim Tattooer's Parlor`}</h1>
+            <h1 className="text-8xl opacity-100 titles">{`Tim Tattooer's Parlor`}</h1>
           </section>
         </div>
       </div>
@@ -69,7 +69,7 @@ export default function Home() {
                 </span>
               </a>
               <a
-                href="https://www.instagram.com/tim_tattooer/"
+                href="mailto:anothertattootim@gmail.com"
                 target="_blank"
                 rel="noreferrer"
                 className="inline"

@@ -8,6 +8,10 @@
   font-family: "Roboto Mono", cursive;
 }
 
+.titles {
+  font-family: "UnifrakturMaguntia", cursive;
+}
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);

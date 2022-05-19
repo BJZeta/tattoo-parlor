@@ -13,11 +13,7 @@ function MapMarker() {
   });
 
   const containerStyle = {
-    width: "80%",
-    height: "300px",
-    borderRadius: "20px",
-    margin: "20px",
-    position: "relative",
+    position: "relative",    
   };
 
   const center = {
@@ -30,7 +26,7 @@ function MapMarker() {
     pos: { lat: 33.836, lng: -117.8446 },
   };
   return isLoaded ? (
-    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={13}>
+    <GoogleMap mapContainerStyle={containerStyle} mapContainerClassName="w-full md:w-[80%] h-48 md:h-[18em] rounded-2xl" center={center} zoom={13}>
       <Marker
         key={marker.id}
         position={marker.pos}

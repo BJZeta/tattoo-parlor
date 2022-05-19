@@ -23,10 +23,10 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-3 justify-items-end text-white text-center pt-12 pb-10 bg-black lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-3 justify-items-end text-white lg:text-center pt-12 pb-10 bg-black lg:grid-cols-2">
         <div className="px-24 mb-11 ease-out duration-100 lg:pl-28 2xl:pl-48 lg:mb-0 grid content-center">
           <h2 className="text-4xl">About Tim Tattooer</h2>
-          <p className="text-xl pt-3">
+          <p className="text-md lg:text-xl pt-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

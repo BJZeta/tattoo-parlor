@@ -23,7 +23,7 @@ export default function Header() {
           <AiOutlineInstagram />
         </a>
         <a
-          href="https://www.instagram.com/tim_tattooer/"
+          href="mailto:anothertattootim@gmail.com"
           target="_blank"
           rel="noreferrer"
           className="mr-2 md:mr-10 hover:text-red-600"

@@ -9,7 +9,7 @@ import {
 function MapMarker() {
   const { isLoaded } = useJsApiLoader({
     id: "google-maps-marker",
-    googleMapsApiKey: process.env.NEXT_PUBLIC_API_KEY,
+    googleMapsApiKey: process.env.API_KEY,
   });
 
   const containerStyle = {

@@ -14,10 +14,6 @@ export default function Layout({ children }) {
       <Header />
       <main className="bg-black">{children}</main>
       <Footer />
-      <script
-            src={`https://maps.googleapis.com/maps/api/js?key=${process.env.API_KEY}&callback=initMap&libraries=&v=weekly`}
-            async
-          ></script>
     </div>
   );
 }

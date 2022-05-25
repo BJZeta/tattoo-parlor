@@ -6,11 +6,18 @@ export default function Layout({ children }) {
   return (
     <div>
       <Head>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=UnifrakturMaguntia&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Header />
       <main className="bg-black">{children}</main>
       <Footer />
+      <script
+            src={`https://maps.googleapis.com/maps/api/js?key=${process.env.API_KEY}&callback=initMap&libraries=&v=weekly`}
+            async
+          ></script>
     </div>
   );
 }

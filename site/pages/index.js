@@ -19,7 +19,10 @@ export default function Home() {
             quality={100}
           />
           <section className="absolute top-48 left-5 md:left-1/4 bg-gradient-to-r from-black to-transparent lg:px-4 rounded-2xl animate-[1s_ease-out_0s_1_slideInFromLeft] ">
-            <h1 className="text-5xl lg:text-7xl xl:text-8xl opacity-100 titles">Three Diamonds Tattoo</h1>
+            <h1 className="text-5xl lg:text-7xl xl:text-8xl opacity-100 titles">
+              Three Diamonds <br />
+              Tattoo Studio
+            </h1>
           </section>
         </div>
       </div>

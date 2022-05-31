@@ -8,7 +8,7 @@ export default function Header() {
       <div id="logo" className="mr-auto">
         <Link href="/">
           <a>
-            <h1 className="text-4xl titles">Tim Tattooer</h1>
+            <h1 className="text-4xl titles">Three Diamonds Tattoo</h1>
           </a>
         </Link>
       </div>

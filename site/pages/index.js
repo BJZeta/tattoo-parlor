@@ -19,13 +19,13 @@ export default function Home() {
             quality={100}
           />
           <section className="absolute top-48 left-5 md:left-1/4 bg-gradient-to-r from-black to-transparent lg:px-4 rounded-2xl animate-[1s_ease-out_0s_1_slideInFromLeft] ">
-            <h1 className="text-5xl lg:text-7xl xl:text-8xl opacity-100 titles">{`Tim Tattooer's Parlor`}</h1>
+            <h1 className="text-5xl lg:text-7xl xl:text-8xl opacity-100 titles">Three Diamonds Tattoo</h1>
           </section>
         </div>
       </div>
       <div className="grid grid-cols-1 gap-3 justify-items-end text-white pt-12 pb-10 bg-black lg:grid-cols-2">
         <div className="px-7 lg:px-24 mb-11 ease-out duration-100 lg:pl-28 2xl:pl-48 lg:mb-0 grid content-center">
-          <h2 className="text-4xl text-center">About Tim Tattooer</h2>
+          <h2 className="text-4xl text-center">About Three Diamonds</h2>
           <p className="text-md lg:text-xl pt-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

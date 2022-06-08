@@ -10,14 +10,14 @@ export default function Home() {
   return (
     <Layout>
       <div className="h-[90vh] text-red-600">
-        <div id="main-image" className="w-full h-full relative">
-          <Image
-            src="/static/banner.jpg"
-            alt="Skull Horns"
-            layout="fill"
-            objectFit="contain"
-            quality={100}
-          />
+        <div id="main-image" className="w-full h-full relative flex z-0">
+          <div className="slideshow">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </div>
           <section className="absolute top-48 left-5 md:left-1/4 bg-gradient-to-r from-black to-transparent lg:px-4 rounded-2xl animate-[1s_ease-out_0s_1_slideInFromLeft] ">
             <h1 className="text-5xl lg:text-7xl xl:text-8xl opacity-100 titles">
               Three Diamonds <br />
